@@ -1,8 +1,8 @@
-FROM python:3.9
+FROM jupyter/pyspark-notebook
 
-COPY analyze_sentiment.py /
-COPY requirements.txt /
+# Copy the notebook and data file into the container
+COPY FinancialNewsSentiment.ipynb /home/jovyan/work/
+COPY FinancialNewsSentiment.csv /home/jovyan/work/
 
-RUN pip install --no-cache-dir -r /requirements.txt
-
-CMD ["python", "/analyze_sentiment.py"]
+# Set the working directory
+WORKDIR /home/jovyan/work/
