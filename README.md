@@ -1,6 +1,9 @@
 **Real-time Financial News Sentiment Analysis Dashboard**
 
 ---
+### You can locate all the Databricks files featured in the presentation within the final-project directory in HTML format. Simply download those files containing data and then upload them onto Databricks.
+
+
 
 ### Project Overview
 
